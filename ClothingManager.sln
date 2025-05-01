@@ -12,6 +12,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.Web", "Clot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.Tests", "ClothingManager.Tests\ClothingManager.Tests.csproj", "{AAB9A550-088A-469B-A9D1-83A22F48F288}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.CustomersService", "ClothingManager.CustomersService\ClothingManager.CustomersService.csproj", "{47D432A6-6C15-4977-BA88-A52EB8E2483F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.Customers.Database", "ClothingManager.Customers.Database\ClothingManager.Customers.Database.csproj", "{EF225EF9-3D7F-466D-901C-32BEA19C76EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.Customers.Contracts", "ClothingManager.Customers.Contracts\ClothingManager.Customers.Contracts.csproj", "{08ED2D7C-BE97-4BD3-836B-8DD4C97C257D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.Customers.Http", "ClothingManager.Customers.Http\ClothingManager.Customers.Http.csproj", "{8A8942C2-93CA-47B3-A8C4-0C97C4F05761}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Customers", "Customers", "{926907AF-0177-4AE9-BBF9-60BC8CB1C670}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,8 +48,30 @@ Global
 		{AAB9A550-088A-469B-A9D1-83A22F48F288}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAB9A550-088A-469B-A9D1-83A22F48F288}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAB9A550-088A-469B-A9D1-83A22F48F288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47D432A6-6C15-4977-BA88-A52EB8E2483F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47D432A6-6C15-4977-BA88-A52EB8E2483F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47D432A6-6C15-4977-BA88-A52EB8E2483F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47D432A6-6C15-4977-BA88-A52EB8E2483F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF225EF9-3D7F-466D-901C-32BEA19C76EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF225EF9-3D7F-466D-901C-32BEA19C76EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF225EF9-3D7F-466D-901C-32BEA19C76EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF225EF9-3D7F-466D-901C-32BEA19C76EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08ED2D7C-BE97-4BD3-836B-8DD4C97C257D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08ED2D7C-BE97-4BD3-836B-8DD4C97C257D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08ED2D7C-BE97-4BD3-836B-8DD4C97C257D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08ED2D7C-BE97-4BD3-836B-8DD4C97C257D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A8942C2-93CA-47B3-A8C4-0C97C4F05761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8942C2-93CA-47B3-A8C4-0C97C4F05761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8942C2-93CA-47B3-A8C4-0C97C4F05761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8942C2-93CA-47B3-A8C4-0C97C4F05761}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{47D432A6-6C15-4977-BA88-A52EB8E2483F} = {926907AF-0177-4AE9-BBF9-60BC8CB1C670}
+		{EF225EF9-3D7F-466D-901C-32BEA19C76EF} = {926907AF-0177-4AE9-BBF9-60BC8CB1C670}
+		{08ED2D7C-BE97-4BD3-836B-8DD4C97C257D} = {926907AF-0177-4AE9-BBF9-60BC8CB1C670}
+		{8A8942C2-93CA-47B3-A8C4-0C97C4F05761} = {926907AF-0177-4AE9-BBF9-60BC8CB1C670}
 	EndGlobalSection
 EndGlobal

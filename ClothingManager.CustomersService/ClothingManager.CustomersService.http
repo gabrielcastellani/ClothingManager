@@ -1,0 +1,6 @@
+@ClothingManager.CustomersService_HostAddress = http://localhost:5020
+
+GET {{ClothingManager.CustomersService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
