@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.AppHost", "ClothingManager.AppHost\ClothingManager.AppHost.csproj", "{D0817C9C-5097-46AE-8A69-EAB38EB57F78}"
 EndProject
@@ -12,15 +12,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.Web", "Clot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.Tests", "ClothingManager.Tests\ClothingManager.Tests.csproj", "{AAB9A550-088A-469B-A9D1-83A22F48F288}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.CustomersService", "ClothingManager.CustomersService\ClothingManager.CustomersService.csproj", "{47D432A6-6C15-4977-BA88-A52EB8E2483F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.Database", "ClothingManager.Database\ClothingManager.Database.csproj", "{FB0AFE55-1462-4AD5-BFC3-0B0FAD7DFC7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.Customers.Database", "ClothingManager.Customers.Database\ClothingManager.Customers.Database.csproj", "{EF225EF9-3D7F-466D-901C-32BEA19C76EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.Database.Abstractions", "ClothingManager.Database.Abstractions\ClothingManager.Database.Abstractions.csproj", "{6BBB4DE9-4D00-472D-97BD-64EB357ACD42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.Customers.Contracts", "ClothingManager.Customers.Contracts\ClothingManager.Customers.Contracts.csproj", "{08ED2D7C-BE97-4BD3-836B-8DD4C97C257D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{17B5C084-824F-4CBC-A734-5FA96CBC4544}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.Customers.Http", "ClothingManager.Customers.Http\ClothingManager.Customers.Http.csproj", "{8A8942C2-93CA-47B3-A8C4-0C97C4F05761}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.Application.Database", "ClothingManager.Application.Database\ClothingManager.Application.Database.csproj", "{B75E8181-347A-48ED-BD2C-8B86E016CA2A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Customers", "Customers", "{926907AF-0177-4AE9-BBF9-60BC8CB1C670}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingManager.Application.Abstractions", "ClothingManager.Application.Abstractions\ClothingManager.Application.Abstractions.csproj", "{8703747B-A2D9-4255-A80E-AE5C5AF0552D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,30 +48,28 @@ Global
 		{AAB9A550-088A-469B-A9D1-83A22F48F288}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAB9A550-088A-469B-A9D1-83A22F48F288}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAB9A550-088A-469B-A9D1-83A22F48F288}.Release|Any CPU.Build.0 = Release|Any CPU
-		{47D432A6-6C15-4977-BA88-A52EB8E2483F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{47D432A6-6C15-4977-BA88-A52EB8E2483F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{47D432A6-6C15-4977-BA88-A52EB8E2483F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{47D432A6-6C15-4977-BA88-A52EB8E2483F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EF225EF9-3D7F-466D-901C-32BEA19C76EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF225EF9-3D7F-466D-901C-32BEA19C76EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF225EF9-3D7F-466D-901C-32BEA19C76EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF225EF9-3D7F-466D-901C-32BEA19C76EF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{08ED2D7C-BE97-4BD3-836B-8DD4C97C257D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08ED2D7C-BE97-4BD3-836B-8DD4C97C257D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08ED2D7C-BE97-4BD3-836B-8DD4C97C257D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{08ED2D7C-BE97-4BD3-836B-8DD4C97C257D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8A8942C2-93CA-47B3-A8C4-0C97C4F05761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8A8942C2-93CA-47B3-A8C4-0C97C4F05761}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8A8942C2-93CA-47B3-A8C4-0C97C4F05761}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8A8942C2-93CA-47B3-A8C4-0C97C4F05761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB0AFE55-1462-4AD5-BFC3-0B0FAD7DFC7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB0AFE55-1462-4AD5-BFC3-0B0FAD7DFC7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB0AFE55-1462-4AD5-BFC3-0B0FAD7DFC7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB0AFE55-1462-4AD5-BFC3-0B0FAD7DFC7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BBB4DE9-4D00-472D-97BD-64EB357ACD42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BBB4DE9-4D00-472D-97BD-64EB357ACD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BBB4DE9-4D00-472D-97BD-64EB357ACD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BBB4DE9-4D00-472D-97BD-64EB357ACD42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B75E8181-347A-48ED-BD2C-8B86E016CA2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B75E8181-347A-48ED-BD2C-8B86E016CA2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B75E8181-347A-48ED-BD2C-8B86E016CA2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B75E8181-347A-48ED-BD2C-8B86E016CA2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8703747B-A2D9-4255-A80E-AE5C5AF0552D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8703747B-A2D9-4255-A80E-AE5C5AF0552D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8703747B-A2D9-4255-A80E-AE5C5AF0552D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8703747B-A2D9-4255-A80E-AE5C5AF0552D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{47D432A6-6C15-4977-BA88-A52EB8E2483F} = {926907AF-0177-4AE9-BBF9-60BC8CB1C670}
-		{EF225EF9-3D7F-466D-901C-32BEA19C76EF} = {926907AF-0177-4AE9-BBF9-60BC8CB1C670}
-		{08ED2D7C-BE97-4BD3-836B-8DD4C97C257D} = {926907AF-0177-4AE9-BBF9-60BC8CB1C670}
-		{8A8942C2-93CA-47B3-A8C4-0C97C4F05761} = {926907AF-0177-4AE9-BBF9-60BC8CB1C670}
+		{B75E8181-347A-48ED-BD2C-8B86E016CA2A} = {17B5C084-824F-4CBC-A734-5FA96CBC4544}
+		{8703747B-A2D9-4255-A80E-AE5C5AF0552D} = {17B5C084-824F-4CBC-A734-5FA96CBC4544}
 	EndGlobalSection
 EndGlobal
